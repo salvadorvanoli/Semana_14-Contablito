@@ -6,13 +6,12 @@ body {
 
 main {
     display: grid;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
     padding: 3%;
-    column-gap: 2%;
-    height: 100vh; /* Esto asegura que el contenedor principal ocupe toda la altura de la ventana. */
+    column-gap: 2;
+    height: 100vh;
 }
 
 h2 {
@@ -33,11 +32,12 @@ label {
 .form-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los formularios verticalmente */
+    align-items: center;
 }
 
 .contentForm {
-    margin-top: 5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 form {
@@ -62,7 +62,6 @@ form {
 }
 
 #logo{
-    /* font-size: large; */
     color: white;
 }
 
