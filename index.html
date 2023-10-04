@@ -8,57 +8,49 @@
     <title>Contablito</title>
 </head>
 <body>
-    <div class="grid-container">
-
-        <div class="container grid-item">
+    <main>
+        <div class="grid-container" id="containerForm">
             <form action="" id="formP" class="contenidoForm">
-                <h2>Registrar producto</h2>
+                <h2 class="text-center">Registrar producto</h2>
                 <div>
                 <label for="idP" class="form-label">Identificador</label>
-                <input id="idP" type="text" class="form-control">
-                <div class="form-text">
-                    Aquí irá colocado el id único de cada producto.
-                </div>
+                <input id="idP" type="text" class="form-control" placeholder="Aquí irá colocado el id único de cada producto.">
+
 
                 <label for="descriptionP" class="form-label">Descripción</label>
-                <input id="descriptionP" type="text" class="form-control">
-                <div class="form-text">
-                    Aquí irá colocado la descripción de cada producto.
-                </div>
+                <input id="descriptionP" type="text" class="form-control" placeholder="Aquí irá colocado la descripción de cada producto.">
+
 
                 <label for="stockP" class="form-label">Stock</label>
-                <input id="stockP" type="number" class="form-control" min="1">
-                <div class="form-text">
-                    Aquí irá colocado el stock de cada producto.
-                </div>
+                <input id="stockP" type="number" class="form-control" min="1" placeholder="Aquí irá colocado el stock de cada producto.">
+
 
                 <label for="priceP" class="form-label">Precio unitario</label>
-                <input id="priceP" type="number" class="form-control" min="1">
-                <div class="form-text">
-                    Aquí irá colocado el precio unitario de cada producto.
-                </div>
+                <input id="priceP" type="number" class="form-control" min="1" placeholder="Aquí irá colocado el precio unitario de cada producto.
+                ">
 
+                <br>
                 <button type="submit" class="btn btn-primary">Registrar producto</button>
                 </div>
             </form>
-        </div>  
+        </div>
 
-        <div class="container grid-item">
+        <div class="grid-container" id="containerForm2">
             <form action="" id="formM" class="contenidoForm">
                 <h2>Registrar movimiento de mercadería</h2>
                 <div>
                 <label for="transactionTM" class="form-label">Tipo de transacción</label>
                 <input id="transactionTM" type="radio" name="transactionTM"> Compra
                 <input type="radio" name="transactionTM"> Venta
-                <div class="form-text">
+                <!-- <div class="form-text">
                     Identifica el tipo de transacción
-                </div>
+                </div> -->
 
                 <label for="dateM" class="form-label">Fecha</label>
                 <input id="dateM" type="date" class="form-control">
-                <div class="form-text">
+                <!-- <div class="form-text">
                     Ingresa la fecha de la transacción
-                </div>
+                </div> -->
 
                 <label for="productInfo" class="form-label">Ingrese el producto de la transacción</label>
                 <input id="" type="text" class="form-control" placeholder="Id del producto">
@@ -66,18 +58,18 @@
                 <label for="productInfo" class="form-label">Ingrese la cantidad</label>
                 <input id="" type="number" class="form-control">
                 </div>
-
-                <div class="d-inline-flex justify-content-evenly grid-container" id="divPrice">
-                    <input class="priceI" type="text" placeholder="Precio unitario: " disabled>
-                    <input class="priceI" type="text" placeholder="Subtotal: " disabled>
-                    <input class="priceI" type="text" placeholder="IVA: " disabled>
-                    <input class="priceI" type="text" placeholder="Total: " disabled>
+                <br>
+                <div class="grid-container" id="divPrice">
+                    <input class="priceI grid-item" type="text" placeholder="Precio unitario: " disabled>
+                    <input class="priceI grid-item" type="text" placeholder="Subtotal: " disabled>
+                    <input class="priceI grid-item" type="text" placeholder="IVA: " disabled>
+                    <input class="priceI grid-item" type="text" placeholder="Total: " disabled>
                 </div>
-
+                <br>
                 <button type="submit" class="btn btn-primary">Registrar transacción</button>
             </form>
         </div>
-    </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
