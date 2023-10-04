@@ -25,22 +25,22 @@
                     <div>
                         <div>
                             <label for="idP" class="form-label">Identificador</label>
-                            <input id="idP" type="text" class="form-control" placeholder="Aquí irá colocado el id único de cada producto.">
+                            <input id="idP" name="idP" type="text" class="form-control" placeholder="Aquí irá colocado el id único de cada producto." required>
                         </div>
         
                         <div>
                             <label for="descriptionP" class="form-label">Descripción</label>
-                            <input id="descriptionP" type="text" class="form-control" placeholder="Aquí irá colocado la descripción de cada producto.">
+                            <input id="descriptionP" name="descriptionP" type="text" class="form-control" placeholder="Aquí irá colocado la descripción de cada producto." required>
                         </div>
         
                         <div>
                             <label for="stockP" class="form-label">Stock</label>
-                            <input id="stockP" type="number" class="form-control" min="1" placeholder="Aquí irá colocado el stock de cada producto.">
+                            <input id="stockP" name="stockP" type="number" class="form-control" min="1" placeholder="Aquí irá colocado el stock de cada producto." required>
                         </div>
         
                         <div>
                             <label for="priceP" class="form-label">Precio unitario</label>
-                            <input id="priceP" type="number" class="form-control" min="1" placeholder="Aquí irá colocado el precio unitario de cada producto.">
+                            <input id="priceP" name="priceP" type="number" class="form-control" min="1" placeholder="Aquí irá colocado el precio unitario de cada producto." required>
                         </div>
         
                         <div>
@@ -53,23 +53,23 @@
                     <div>
                         <div>
                             <label for="transactionTM" class="form-label">Tipo de transacción: </label>
-                            <input id="transactionTM" type="radio" name="transactionTM"> Compra
+                            <input id="transactionTM" type="radio" name="transactionTM" required> Compra
                             <input type="radio" name="transactionTM"> Venta
                         </div>
         
                         <div>
                             <label for="dateM" class="form-label">Fecha</label>
-                            <input id="dateM" type="date" class="form-control">
+                            <input id="dateM" name="dateM" type="date" class="form-control" required>
                         </div>
         
                         <div>
                             <label for="productM" class="form-label">Ingrese el producto de la transacción</label>
-                            <input id="productM" type="text" class="form-control" placeholder="Id del producto">
+                            <input id="productM" name="productM" type="text" class="form-control" placeholder="Id del producto" required>
                         </div>
         
                         <div>
                             <label for="quantityM" class="form-label">Ingrese la cantidad</label>
-                            <input id="quantityM" type="number" class="form-control">
+                            <input id="quantityM" name="quantityM" type="number" class="form-control" min="1" required>
                         </div>
                     </div>
         
