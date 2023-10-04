@@ -24,6 +24,22 @@ label {
     font-size: larger;
 }
 
+form {
+    background-color: rgba(128, 128, 128, 0.342);
+    padding: 3rem;
+    border-style: double;
+    border-color: red green blue yellow;
+    width: 500px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.table-container{
+    overflow-x: auto;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -38,18 +54,6 @@ label {
 .contentForm {
     margin-top: 1vh;
     margin-bottom: 1vh;
-}
-
-form {
-    background-color: rgba(128, 128, 128, 0.342);
-    padding: 3rem;
-    border-style: double;
-    border-color: red green blue yellow;
-    width: 500px;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 #divPrice {
