@@ -96,4 +96,8 @@ form {
         width: min-content;
         height: min-content;
     }
+    .btn-sm{
+        width: 70px;
+        font-size: 13px;
+    }
 }
